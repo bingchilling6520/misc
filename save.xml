@@ -1,0 +1,126 @@
+<xml version="1.0">
+<dashboard>
+	<widget field="Auto Selector" type="String" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="239" y="33"/>
+	</widget>
+	<widget field="Commands Running" type="Scheduler" class="edu.wpi.first.smartdashboard.gui.elements.Scheduler">
+		<location x="13" y="274"/>
+	</widget>
+	<widget field="Auto Command" type="String Chooser" class="edu.wpi.first.smartdashboard.gui.elements.Chooser">
+		<location x="519" y="265"/>
+	</widget>
+	<widget field="Trap Door Open?" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="170" y="392"/>
+	</widget>
+	<widget field="Pulley Running?" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="177" y="371"/>
+	</widget>
+	<widget field="Intake Running?" type="Boolean" class="edu.wpi.first.smartdashboard.gui.elements.BooleanBox">
+		<location x="176" y="350"/>
+	</widget>
+	<widget field="Driverbase Normal Speed" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="199" y="280"/>
+	</widget>
+	<widget field="Trap Door Speed" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="285" y="392"/>
+	</widget>
+	<widget field="Pulley Speed" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="305" y="373"/>
+	</widget>
+	<widget field="Intake Speed" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="302" y="353"/>
+	</widget>
+	<widget field="Driverbase Boosted Speed" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.TextBox">
+		<location x="194" y="305"/>
+		<height>20</height>
+	</widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.Label">
+		<location x="228" y="62"/>
+		<width>125</width>
+		<height>55</height>
+		<property name="Text" value="Driverbase Speed"/>
+	</static-widget>
+	<widget field="Right Speed" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.SimpleDial">
+		<location x="296" y="106"/>
+		<property name="Upper Limit" value="1.0"/>
+		<property name="Lower Limit" value="-1.0"/>
+		<property name="Tick Interval" value="0.05"/>
+	</widget>
+	<widget field="Left Speed" type="Number" class="edu.wpi.first.smartdashboard.gui.elements.SimpleDial">
+		<location x="41" y="105"/>
+		<property name="Upper Limit" value="1.0"/>
+		<property name="Lower Limit" value="-1.0"/>
+		<property name="Tick Interval" value="0.05"/>
+	</widget>
+	<widget field="WARNING" type="String" class="edu.wpi.first.smartdashboard.gui.elements.FormattedField">
+		<location x="0" y="630"/>
+		<width>1256</width>
+		<height>93</height>
+		<property name="Foreground" value="153.102.0.255"/>
+		<property name="Font Size" value="50"/>
+	</widget>
+	<static-widget class="edu.wpi.first.smartdashboard.gui.elements.ConnectionIndicator">
+		<location x="0" y="0"/>
+		<height>32</height>
+	</static-widget>
+</dashboard>
+<live-window>
+	<widget field="TrapDoorSubsys" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
+		<location x="14" y="8"/>
+	</widget>
+	<widget field="DriverBaseSubsys" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
+		<location x="21" y="23"/>
+	</widget>
+	<widget field="IntakeSubsys" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
+		<location x="6" y="26"/>
+	</widget>
+	<widget field="PulleySubsys" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
+		<location x="23" y="7"/>
+	</widget>
+	<widget field="Ungrouped" type="LW Subsystem" class="edu.wpi.first.smartdashboard.livewindow.elements.LWSubsystem">
+		<widget field="Talon SRX [4]" type="Motor Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="6" y="15"/>
+			<height>45</height>
+			<width>295</width>
+		</widget>
+		<widget field="Talon SRX [1]" type="Motor Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="6" y="60"/>
+			<height>45</height>
+			<width>295</width>
+		</widget>
+		<widget field="Talon SRX [3]" type="Motor Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="6" y="105"/>
+			<height>45</height>
+			<width>295</width>
+		</widget>
+		<widget field="Talon FX [6]" type="Motor Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="6" y="150"/>
+			<height>45</height>
+			<width>295</width>
+		</widget>
+		<widget field="Talon SRX [5]" type="Motor Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="6" y="195"/>
+			<height>45</height>
+			<width>295</width>
+		</widget>
+		<widget field="Victor SPX [8]" type="Motor Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="6" y="240"/>
+			<height>45</height>
+			<width>295</width>
+		</widget>
+		<widget field="Talon SRX [2]" type="Motor Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="6" y="285"/>
+			<height>45</height>
+			<width>295</width>
+		</widget>
+		<widget field="Talon FX [7]" type="Motor Controller" class="edu.wpi.first.smartdashboard.livewindow.elements.SpeedController">
+			<location x="6" y="330"/>
+			<height>45</height>
+			<width>295</width>
+		</widget>
+		<location x="23" y="22"/>
+		<width>307</width>
+		<height>381</height>
+	</widget>
+</live-window>
+</xml>
